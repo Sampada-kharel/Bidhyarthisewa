@@ -1,0 +1,234 @@
+@font-face {
+      font-family: "poppins";
+      src: url("/assets/Fonts/Poppins-ExtraLight.ttf");
+}
+
+*{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: "poppins";
+} 
+
+body{
+      font-size: 1em;
+      /* background-color: rgba(141, 141, 197, 0.456); */
+      background-color: rgba(175, 106, 106, 0.43);
+}
+
+a{
+      text-decoration: none;
+      font-weight: bolder;
+      color: black;
+}
+
+header{
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 9.3em;
+      height: 10vh;
+      align-items: center;
+      position: fixed;
+      top:0;
+      right: 0;
+      left: 0;
+}
+
+.logo img{
+      max-height: 4em;
+      padding: 0.4em;
+}
+
+/* Search Bar  */
+.search-bar{
+      display: flex;
+      align-items: center;
+      border-radius: 3.75em;
+      padding-left:0.625em;
+      background-color: rgb(218, 106, 106);
+}
+
+.search-container input{
+      border: none;
+      border: none;
+      outline: none;
+      padding: 0.625em 10.25em 0.625em 0.625em;      
+      font-size:1em;
+      background: transparent;
+      color: black;
+}
+
+button{
+      border: none;
+      padding-right: 2.5em;
+}
+::placeholder{
+      color: black ;
+}
+
+.search-bar button img{
+      height: 1.875em;
+      width: 1.875em;
+}
+
+.search-bar button{
+      border-radius: 50%;
+      width: 1.875em;
+      height: 1.875em;
+      background:none;
+      cursor: pointer;
+}
+
+/* Icons section  */
+.icons img{
+      align-items: center;
+      height:1.875em;
+}
+
+.icons{
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      float: right;
+      position: relative;
+}
+
+.icons a{
+      padding: 0.5em 1em;
+      margin: 0.5em;
+}
+
+.icons a:hover,.logo:hover{
+      background-color: #ad00005b;
+      border-radius: 6.25em;
+      transition: all 100ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.menu{
+      position: absolute;
+      background: #1b1b1b;
+      list-style: none;
+      top: 75px;
+      left: 0;
+      width: 100%;
+      border-radius: 5px;
+      display: none;
+}
+
+.icons .menu:hover:before{
+      display: block;
+      position: absolute;
+      content: '';
+      height: 20px;
+      width: 20px;
+      background: #1b1b1b;
+      right: 20px;
+      top: -10px;
+      transform: rotate(45deg);
+      z-index: -1;
+    }
+
+.nav-text{
+      font-size: 0.8em;
+      float: right;
+      font-weight: 800;
+
+}
+
+.body-container{
+      margin: 3.125em 12.5em;
+}
+
+/* homepage container style  */
+
+.container{
+
+      background-color: rgb(247, 247, 247);
+      display: flex;
+      align-items:center;
+      justify-content:space-evenly;
+}
+
+.large-image img{
+      height: 70vh;
+      border-radius: 40%;
+}
+
+.text-box h4{
+      font-size: 1.5em;
+}
+
+.text-box h1{
+      font-size: 4em;
+      color: #AD0000;
+      padding-bottom: 20px;
+}
+
+.text-box p{
+      font-size: 1.2em;
+}
+
+/*Product Section*/
+.product-container{
+      background-color: rgb(255, 255, 255);
+      margin-top:50px;
+      text-align: center;
+}
+
+.product-container h2{
+      font-size: 2em;
+}
+
+.product-container>p{
+      font-size: 1.5em;
+}
+
+.product-container .product-list .product{
+      width: 23%;
+      min-width: 250px;
+      padding: 10px 20px;
+      border: 1px solid rgb(0, 0, 0);
+      border-radius: 20px;
+      cursor: pointer;
+      box-shadow: 20px 20px 1.875em rgba(0,0,0,0.02);
+      margin:15px 0;
+      transform: 0.2sec ease;
+      position: relative;
+}
+
+.product-container .product-list .product:hover{
+      box-shadow: 20px 20px 1.875em rgba(0,0,0,0.06);
+}
+
+.product-container .product-list .product img{
+      width: 100%;
+      border-radius: 20px;
+}
+
+.product-container .product-list .product .pro-description{
+      display: inline;
+      text-align: start;
+}
+
+.product-container .product-list .product .pro-description .product-name{
+      font-size:1.2em;     
+}
+
+.product-container .product-list .product .pro-description .product-price{
+      color:#AD0000;
+}
+
+.product-container .product-list .product .cart{
+      color:#AD0000;
+      position: absolute;
+      bottom: 20px;
+      right: 10px;
+}
+
+.product-container .product-list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+}
